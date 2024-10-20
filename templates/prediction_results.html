@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="flex justify-center gap-8 py-4 transition duration-500 ease-in-out transform hover:scale-105">
+            <a href="/home" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Home</a>
+            <a href="/aboutproject" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">About Project</a>
+            <a href="/location" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Get Location</a>
+            <a href="/review" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Review</a>
+            <a href="/sourcecode" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Source Code</a>
+            <a href="/creator" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Team</a>
+            
+        </div>
+    </nav>
+
+    <div class="max-w-md mx-auto my-8 bg-white rounded-lg shadow-lg p-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Prediction Results</h1>
+
+        <div class="text-center mb-6">
+            <h2 class="text-xl text-blue-600">Predicted Magnitude: {{ magnitude }}</h2>
+            <h3 class="text-lg text-red-600">Risk Level: {{ risk_score }}</h3>
+        </div>
+
+        <div class="text-center">
+            <a href="{{ url_for('home') }}" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">Make Another Prediction</a>
+        </div>
+    </div>
+
+</body>
+</html>

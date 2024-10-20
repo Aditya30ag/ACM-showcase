@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Health Risk Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+        }
+
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #34495e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+        }
+
+        p {
+            text-align: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="flex justify-center gap-8 py-4 transition duration-500 ease-in-out transform hover:scale-105">
+            <a href="/home" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Home</a>
+            <a href="/aboutproject" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">About Project</a>
+            <a href="/location" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Get Location</a>
+            <a href="/review" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Review</a>
+            <a href="/sourcecode" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Source Code</a>
+            <a href="/creator" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Team</a>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h1>Error</h1>
+            <p>An error occurred while processing your request.</p>
+            <div style="text-align: center;">
+                <a href="homepage.html" class="btn" style="background: #3498db; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Return Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

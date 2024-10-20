@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Risk Protector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="flex justify-center gap-8 py-4 transition duration-500 ease-in-out transform hover:scale-105">
+            <a href="/home" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Home</a>
+            <a href="/aboutproject" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">About Project</a>
+            <a href="/location" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Get Location</a>
+            <a href="/review" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Review</a>
+            <a href="/sourcecode" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Source Code</a>
+            <a href="/creator" class="text-white hover:bg-gray-700 px-4 py-2 rounded transition duration-300 ease-in-out hover:text-yellow-400">Team</a>
+            
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto my-16">
+        <div class="bg-white rounded-lg p-8 shadow-xl transform transition duration-500 hover:shadow-2xl hover:scale-105 fade-in-up">
+            <h1 class="text-3xl font-extrabold text-gray-800 text-center mb-8">Earthquake Risk Protector</h1>
+
+            <form action="/prediction" method="post" class="space-y-6">
+                <div>
+                    <label for="param1" class="block text-gray-700 font-semibold mb-2">Latitude:</label>
+                    <input type="number" step="0.01" id="param1" name="a"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300"
+                        required>
+                </div>
+
+                <div>
+                    <label for="param2" class="block text-gray-700 font-semibold mb-2">Longitude:</label>
+                    <input type="number" step="0.01" id="param2" name="b"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300"
+                        required>
+                </div>
+
+                <div>
+                    <label for="param3" class="block text-gray-700 font-semibold mb-2">Depth:</label>
+                    <input type="number" step="0.01" id="param3" name="c"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300"
+                        required>
+                </div>
+
+                <div class="text-center mt-6">
+                    <button type="submit"
+                        class="bg-blue-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-blue-600 hover:scale-105 transition-all duration-300 transform">Predict
+                        Risk</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Animation Styles -->
+    <style>
+        @keyframes fade-in-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-down {
+            animation: fade-in-down 0.5s ease-out forwards;
+        }
+    </style>
+</body>
+
+</html>
